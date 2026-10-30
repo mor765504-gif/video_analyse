@@ -18,11 +18,7 @@ bash scripts/frames.sh ./output/video.mp4 ./output 5
 
 ## B 站视频
 
-原仓库没有找到独立的 B 站抽帧 skill。对于已取得的本地 B 站视频，可以直接使用相同的 `frames.sh` 和 `crop.sh` 抽帧和生成分镜；抖音抓取脚本不能视为已验证的 B 站链接下载器。视频素材需自行取得。
-
-```bash
-bash skills/douyin-video-teardown/scripts/frames.sh /path/to/video.mp4 ./output 5
-```
+已新增 [B 站视频拆解 skill](skills/bilibili-video-teardown/SKILL.md)，支持公开链接下载、抽帧和报告骨架。需要 Python、yt-dlp 和 FFmpeg；支持本地视频。请按该 skill 的安装说明操作。
 
 ## 来源
 
