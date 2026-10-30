@@ -60,7 +60,7 @@ fi
 
 if [ -z "$FF" ]; then
   FF=$("$PY" "$SKILL_DIR/scripts/ffbin.py" 2>/dev/null || true)
-  [ -n "$FF" ] && note "静态 ffmpeg: $FF（frames.sh 会自动找到，不用进 PATH）"
+  [ -n "$FF" ] && note "静态 ffmpeg: ${FF}（frames.sh 会自动找到，不用进 PATH）"
 fi
 
 echo "== 完成 =="
